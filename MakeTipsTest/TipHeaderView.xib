@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TipHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="163"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWq-tZ-4FN">
+                    <rect key="frame" x="0.0" y="0.0" width="295" height="163"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                    <state key="normal" title="+"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="llf-gz-IVR">
+                    <rect key="frame" x="0.0" y="0.0" width="295" height="163"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BWq-tZ-4FN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HgQ-n7-kHz"/>
+                <constraint firstItem="llf-gz-IVR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IZe-o4-oaU"/>
+                <constraint firstItem="llf-gz-IVR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ls0-89-IKF"/>
+                <constraint firstAttribute="trailing" secondItem="llf-gz-IVR" secondAttribute="trailing" id="WI7-Tk-1uT"/>
+                <constraint firstAttribute="bottom" secondItem="llf-gz-IVR" secondAttribute="bottom" id="dAY-Dv-DXw"/>
+                <constraint firstAttribute="bottom" secondItem="BWq-tZ-4FN" secondAttribute="bottom" id="dzI-oK-PkT"/>
+                <constraint firstItem="BWq-tZ-4FN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iVH-wW-VYv"/>
+                <constraint firstAttribute="trailing" secondItem="BWq-tZ-4FN" secondAttribute="trailing" id="v9y-ZP-mzo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="m_addHeaderBtn" destination="BWq-tZ-4FN" id="eL4-Wr-Fmu"/>
+                <outlet property="m_headerImageV" destination="llf-gz-IVR" id="Xn1-il-ZWf"/>
+            </connections>
+            <point key="canvasLocation" x="234.5" y="220.5"/>
+        </view>
+    </objects>
+</document>

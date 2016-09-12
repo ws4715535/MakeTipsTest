@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AyX-0N-nhb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="cqH-5a-Cht">
+            <objects>
+                <navigationController id="AyX-0N-nhb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E4C-w3-fqk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="asd-lJ-eBv" kind="relationship" relationship="rootViewController" id="DLX-T0-cuc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xY0-WN-4qd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-785" y="-78"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dVi-Ta-kgs">
+            <objects>
+                <viewController id="asd-lJ-eBv" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b5Z-M6-yOJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="iui-LJ-whG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dxA-P0-H47">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fXw-4Z-bKI">
+                        <barButtonItem key="rightBarButtonItem" title="完成" id="P5J-uW-1Mw">
+                            <color key="tintColor" red="0.0900396928191185" green="0.41571301221847534" blue="0.10939008742570877" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="makeNote:" destination="asd-lJ-eBv" id="6iD-HG-laN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVz-rD-hC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-118" y="-33"/>
+        </scene>
+    </scenes>
+</document>
